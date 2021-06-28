@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img
+            src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png"
+            alt="logo"
+          />
+        </div>
+        <span>CleverJobs</span>
+      </div>
+    </header>
+
+    <div class="search">
+      <div class="search-container">
+        <div class="input-container">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            id="filterJobs"
+            name="filter-jobs"
+            placeholder="Filter by title"
+          />
+        </div>
+        <div class="button-container">
+          <span>Find Job</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="jobs-list">
+      <h1>Showing 15 Jobs</h1>
+      <div class="jobs-container">
+        <div class="job-tile">
+          <div class="top">
+            <img
+              src="https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-5.png"
+              alt=""
+            />
+            <span class="material-icons more_horiz"> more_horiz </span>
+          </div>
+          <div class="rolename">
+            <span>Lead Product Design</span>
+          </div>
+          <div class="description">
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              expedita veniam impedit reprehenderit ipsam odio obcaecati, non
+              numquam est fugiat officia.</span
+            >
+          </div>
+          <div class="buttons">
+            <div class="button apply-now">
+              Apply Now
+            </div>
+            <div class="button">
+              Message
+            </div>
+
+          </div>
+        </div>
+        <div class="job-tile">One Job</div>
+        <div class="job-tile">One Job</div>
+        <div class="job-tile">One Job</div>
+        <div class="job-tile">One Job</div>
+        <div class="job-tile">One Job</div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>

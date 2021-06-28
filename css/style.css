@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #fff;
+    background-color: #11121A;
+}
+
+
+header {
+    background-color: #1c1c24;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* UTILITES */
+.header-container {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.header-container .logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.header-container .logo img{
+    height: 100%;
+}
+
+.search {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.search-container {
+    background-color: #1c1c24;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #222328;
+    display: flex;
+    overflow: hidden;
+}
+
+.input-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.input-container i {
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+.button-container {
+    background-color: #3060ff;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-container:hover {
+    background-color: #5a81ff;
+}
+
+.jobs-list {
+    max-width: 1250px;
+    width: 100%;
+    background-color: #11121A;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.jobs-list h1 {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.jobs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    background-color: #11121A;
+}
+
+.job-tile {
+    background-color: #1c1c24;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+.job-tile:hover {
+    transform: scale(1.05);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+}
+
+.rolename {
+    padding: 20px 0;
+}
+
+.rolename span {
+    font-size: 22px;
+}
+
+.description {
+    height: 105px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #96939b;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.button {
+    background-color: #2e2e39;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #96939b;
+    font-size: 14px;
+}
+
+.apply-now {
+    color: #fff;
+    background-color: #3060ff;
+    margin-right: 15px;
+}
+
+.apply-now:hover{
+    background-color: #5a81ff;
+}
